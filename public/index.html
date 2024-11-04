@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테트리스 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-area">
+            <canvas id="tetris" width="240" height="400"></canvas>
+            <div id="side-panel">
+                <div id="next-piece-container">
+                    <h3>Next Piece</h3>
+                    <canvas id="next-piece" width="80" height="80"></canvas>
+                </div>
+                <div id="score">Score: <span id="score-value">0</span></div>
+                <button id="pause-button">Pause</button>
+            </div>
+        </div>
+        <div id="controls-info">
+            <strong>Control</strong><br>
+            <p>Left Arrow: Move Left | 
+            Right Arrow: Move Right </p>
+            <p>Up Arrow: Rotate Counter-clockwise | 
+            Down Arrow: Rotate Clockwise </p>
+            Spacebar: Hard Drop
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
